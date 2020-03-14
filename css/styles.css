@@ -1,0 +1,55 @@
+*{
+	margin:0;
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-auto-flow: row dense;
+}
+.grid-element{
+	background: white;
+	border: 8px solid black;
+	height: 330px;
+}
+.red{
+	background: red;
+}
+.blue{
+	background: blue;
+}
+.yellow{
+	background: yellow;
+}
+.black{
+	background: black;
+}
+.large{
+	grid-column: span 2;
+}
+
+.xlarge{
+	grid-column: span 3;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+ .grid{
+	grid-template-columns: 50% 50%;
+}
+.grid-element{
+	height: 230px;
+}
+}
+
+@media only screen and (min-width: 900px) {
+ .grid{
+	grid-template-columns: 25% 25% 25% 25%;
+}
+.grid-element{
+	height: 430px;
+}
+}
